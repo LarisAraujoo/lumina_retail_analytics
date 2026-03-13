@@ -1,0 +1,13 @@
+data,produto,categoria,preco,quantidade
+2024-01-05,caderno,papelaria,15,3
+2024-01-10,caneta,papelaria,3,10
+2024-01-12,mochila,acessorios,120,1
+2024-02-02,caderno,papelaria,15,4
+2024-02-10,caneta,papelaria,3,8
+2024-02-15,mochila,acessorios,120,2
+2024-03-01,caderno,papelaria,15,2
+2024-03-05,caneta,papelaria,3,12
+2024-03-20,mochila,acessorios,120,1
+2024-03-25,estojo,acessorios,25,3
+2024-04-02,caderno,papelaria,15,5
+2024-04-10,estojo,acessorios,25,2
