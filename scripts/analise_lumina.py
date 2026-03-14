@@ -7,3 +7,7 @@ dados["data"] = pd.to_datetime(dados["data"])
 print(dados.head())
 
 print(dados.dtypes)
+
+dados["faturamento"] = dados["preco"] * dados["quantidade"]
+
+print(dados.head())
