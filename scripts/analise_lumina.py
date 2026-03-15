@@ -9,5 +9,8 @@ print(dados.head())
 print(dados.dtypes)
 
 dados["faturamento"] = dados["preco"] * dados["quantidade"]
+faturamento_total = dados["faturamento"].sum()
 
+print("Faturamento total da loja:")
+print(faturamento_total)
 print(dados.head())
