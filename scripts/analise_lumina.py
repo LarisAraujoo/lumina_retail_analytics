@@ -14,3 +14,8 @@ faturamento_total = dados["faturamento"].sum()
 print("Faturamento total da loja:")
 print(faturamento_total)
 print(dados.head())
+
+faturamento_por_produto = dados.groupby("produto")["faturamento"].sum()
+
+print("\nFaturamento por produto:")
+print(faturamento_por_produto)
