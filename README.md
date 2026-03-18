@@ -1,66 +1,121 @@
 # Análise de Vendas - Lumina Retail
 
-Este projeto é um exercício de análise de dados utilizando Python e Pandas.  
-O objetivo é explorar um conjunto de dados de vendas de uma loja fictícia chamada **Lumina Retail** e extrair informações úteis a partir desses dados.
+Este projeto apresenta uma análise exploratória de dados de vendas utilizando Python, com o objetivo de identificar padrões de consumo, produtos mais rentáveis e desempenho financeiro da loja fictícia **Lumina Retail**.
 
-## Objetivo do Projeto
+---
 
-Praticar conceitos fundamentais de análise de dados, incluindo:
+## Objetivo
 
-- Leitura de arquivos CSV
-- Manipulação de dados com Pandas
-- Conversão de tipos de dados
-- Criação de novas métricas
-- Exploração inicial dos dados
+Analisar dados de vendas para extrair insights relevantes sobre:
+
+- faturamento total
+- desempenho de produtos
+- comportamento de vendas ao longo do tempo
+- categorias mais lucrativas
+
+---
+
+## Tecnologias Utilizadas
+
+- Python
+- Pandas
+- Matplotlib
+- VS Code
+
+---
 
 ## Estrutura do Projeto
 
 analise-vendas-lumina-retail/
 
 dados/  
-  vendas_lumina.csv → conjunto de dados de vendas  
+  vendas_lumina.csv → base de dados de vendas  
 
 scripts/  
-  analise_lumina.py → script principal de análise  
+  analise_lumina.py → script responsável pela análise  
 
 notebooks/  
-  (pasta reservada para análises futuras em Jupyter Notebook)
+  (pasta reservada para análises futuras)
 
 README.md → documentação do projeto
 
-## Tecnologias Utilizadas
-
-- Python
-- Pandas
-- VS Code
+---
 
 ## Etapas da Análise
 
-1. Importação da biblioteca Pandas
-2. Leitura do dataset de vendas
-3. Conversão da coluna de data para formato datetime
-4. Inspeção inicial dos dados
-5. Criação da coluna de faturamento (preço × quantidade)
+1. Leitura do dataset CSV
+2. Conversão da coluna de data para datetime
+3. Criação da métrica de faturamento
+4. Cálculo de métricas agregadas
+5. Identificação de produtos e categorias mais lucrativas
+6. Análise temporal das vendas
+7. Criação de visualização de faturamento por produto
 
-## Métrica Criada
+---
 
-**Faturamento**
+## Resultados da Análise
 
-Faturamento = Preço × Quantidade
+### Faturamento Total
 
-Essa métrica permite entender quanto cada venda gerou de receita para a loja.
+A loja gerou um faturamento total de:
+
+**R$ 905**
+
+---
+
+### Faturamento por Produto
+
+- Mochila: **R$ 480**
+- Caderno: **R$ 210**
+- Estojo: **R$ 125**
+- Caneta: **R$ 90**
+
+O produto mais lucrativo foi **mochila**, responsável por mais de 50% da receita total.
+
+---
+
+### Produto Mais Vendido
+
+O item mais vendido em quantidade foi:
+
+**Caneta — 18 unidades**
+
+---
+
+### Categoria com Maior Faturamento
+
+A categoria **papelaria** apresentou o maior volume de vendas e faturamento.
+
+---
+
+### Melhor Dia de Vendas
+
+O dia com maior faturamento foi:
+
+**12/01/2024 — R$ 120**
+
+---
+
+### Ticket Médio
+
+O ticket médio das vendas foi de aproximadamente:
+
+**R$ 181 por venda**
+
+---
+
+## Visualização
+
+### Faturamento por Produto
+
+![Faturamento por Produto](dados/grafico_faturamento_produto.png)
+
+---
 
 ## Como Executar o Projeto
 
-1. Clonar ou baixar o repositório
+1. Baixar ou clonar o repositório
 2. Abrir a pasta no VS Code
-3. Executar o script no terminal:
+3. Executar no terminal:
 
 python scripts/analise_lumina.py
-
-## Próximos Passos do Projeto
-
-- Calcular faturamento total
-- Descobrir produtos mais vendidos
-- Analisar faturamento por categoria
-- Criar visualizações de dados
